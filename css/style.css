@@ -1,0 +1,392 @@
+:root {
+    --Green-500: hsl(171, 66%, 44%);
+    --Blue-100: hsl(233, 100%, 69%);
+
+    --Gray-700: hsl(210, 10%, 33%);
+    --Gray-500: hsl(201, 11%, 66%);
+
+    --Font-size: 18px;
+}
+
+.body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bai Jamjuree';
+    width: 100%;
+}
+
+
+/* ----------------------------ORGANIZAÇÃO DO CABEÇALHO---------------------------- */
+
+.cabecalho {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.cabecalho img:first-child {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.cabecalho img:nth-child(2) {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.cabecalho .sobre {
+    position: relative;
+    z-index: 5;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    width: 635px;
+}
+
+.cabecalho .sobre h1 {
+    font-size: 39px;
+    color: var(--Gray-700);
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.cabecalho .sobre p {
+    font-size: var(--Font-size);
+    color: var(--Gray-500);
+    margin: 0 0 50px 0;
+}
+
+.cabecalho .sobre .download {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cabecalho .sobre .download a {
+    background-color: var(--Blue-100);
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 3px 1px hsl(233, 50%, 51%);
+    cursor: pointer;
+    margin: 0 0 150px 0;
+}
+
+.cabecalho .sobre .download a:first-child {
+    background-color: var(--Green-500);
+    box-shadow: 0 3px 1px hsl(171, 60%, 34%);
+}
+
+.cabecalho .sobre .download a:first-child:hover {
+    background-color: hsl(171, 66%, 54%);
+    box-shadow: 0 3px 1px hsl(171, 60%, 44%);
+    padding: 16px 31px;
+}
+
+.cabecalho .sobre .download a:last-child:hover {
+    background-color: hsl(233, 100%, 79%);
+    box-shadow: 0 3px 1px hsl(233, 50%, 61%);
+    padding: 16px 31px;
+}
+
+/* ----------------------------ORGANIZAÇÃO DO CONTEÚDO PRINCIPAL---------------------------- */
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.conteudo-principal .primeiro-quadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+}
+
+.conteudo-principal .primeiro-quadro h2 {
+    width: 635px;
+    text-align: center;
+    font-size: 33px;
+    color: var(--Gray-700);
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.conteudo-principal .primeiro-quadro p {
+    width: 635px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--Gray-500);
+    margin: 0 0 80px 0;
+}
+
+.conteudo-principal .primeiro-quadro .primeiro-modelo {
+    display: flex;
+    gap: 80px;
+    overflow: hidden;
+    align-self: flex-start;
+    margin: 0 0 120px 0;
+}
+
+.conteudo-principal .primeiro-quadro .primeiro-modelo .imagem img {
+    width: 732px;
+    transform: translateX(-30px);
+    margin: 0;
+}
+
+.conteudo-principal .primeiro-quadro .primeiro-modelo .informacoes {
+    width: 330px;
+}
+
+.conteudo-principal .primeiro-quadro .primeiro-modelo .informacoes h2:first-child {
+    width: auto;
+    text-align: left;
+    margin: 80px 0 5px 0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.conteudo-principal .primeiro-quadro .primeiro-modelo .informacoes h2 {
+    width: auto;
+    text-align: left;
+    font-size: 23px;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.conteudo-principal .primeiro-quadro .primeiro-modelo .informacoes p {
+    width: auto;
+    text-align: left;
+    margin: 0 0 50px 0;
+    line-height: 200%;
+    font-size: 15px;
+}
+
+.conteudo-principal .segundo-quadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-principal .segundo-quadro h2 {
+    font-size: 33px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: var(--Gray-700);
+    font-weight: 500;
+}
+
+.conteudo-principal .segundo-quadro p {
+    width: 700px;
+    text-align: center;
+    color: var(--Gray-500);
+    margin: 0 0 80px 0;
+}
+
+.conteudo-principal .segundo-quadro img {
+    margin: 0 0 30px 0;
+}
+
+/* ----------------------------ORGANIZAÇÃO DO ASIDE FERRAMENTAS---------------------------- */
+.ferramentas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ferramentas h2 {
+    font-size: 33px;
+    color: var(--Gray-700);
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.ferramentas p {
+    color: var(--Gray-500);
+    margin: 0 0 40px 0;
+}
+
+.ferramentas .roteiro-de-trabalho {
+    display: flex;
+    width: 880px;
+    gap: 20px;
+    margin: 0 0 80px 0;
+}
+
+.ferramentas .roteiro-de-trabalho .ordem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+
+.ferramentas .roteiro-de-trabalho .ordem:nth-child(1) img {
+    width: 44px;
+    height: 40px;
+    margin: 0 0 20px 0;
+}
+
+.ferramentas .roteiro-de-trabalho .ordem:nth-child(2) img {
+    width: 36px;
+    height: 32px;
+    margin: 8px 0 20px 0;
+}
+
+
+.ferramentas .roteiro-de-trabalho .ordem:nth-child(3) img {
+    width: 50px;
+    height: 32px;
+    margin: 8px 0 20px 0;
+}
+
+.ferramentas .roteiro-de-trabalho .ordem h3 {
+    color: var(--Gray-700);
+}
+
+.ferramentas .roteiro-de-trabalho .ordem p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.ferramentas .empresas-parceiras {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+
+.ferramentas .empresas-parceiras img:first-child {
+    width: auto;
+    height: 49px;
+}
+
+.ferramentas .empresas-parceiras img:nth-child(2) {
+    width: auto;
+    height: 51px;
+}
+
+.ferramentas .empresas-parceiras img:nth-child(3) {
+    width: auto;
+    height: 35px;
+}
+
+.ferramentas .empresas-parceiras img:nth-child(4) {
+    width: auto;
+    height: 56px;
+}
+
+.ferramentas .empresas-parceiras img:last-child {
+    width: auto;
+    height: 30px;
+}
+
+.ferramentas .download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ferramentas .download p {
+    width: 660px;
+    text-align: center;
+}
+
+.ferramentas .download .links {
+    display: flex;
+    gap: 25px;
+}
+
+.ferramentas .download .links a {
+    background-color: var(--Blue-100);
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 3px 1px hsl(233, 50%, 51%);
+    cursor: pointer;
+    margin: 0 0 150px 0;
+}
+
+.ferramentas .download .links a:first-child {
+    background-color: var(--Green-500);
+    box-shadow: 0 3px 1px hsl(171, 60%, 34%);
+}
+
+.ferramentas .download .links a:first-child:hover {
+    background-color: hsl(171, 66%, 54%);
+    box-shadow: 0 3px 1px hsl(171, 60%, 44%);
+    padding: 16px 31px;
+}
+
+.ferramentas .download .links a:last-child:hover {
+    background-color: hsl(233, 100%, 79%);
+    box-shadow: 0 3px 1px hsl(233, 50%, 61%);
+    padding: 16px 31px;
+}
+
+/* --------------------------------------ORGANIZAÇÃO DO RODAPE-------------------------------------- */
+.rodape {
+    display: flex;
+    height: 100px;
+    padding: 0 50px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: hsl(180, 10%, 94%);
+    align-items: center;
+}
+
+.rodape img {
+    width: 50px;
+    height: 50px;
+}
+
+.rodape .links {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px 100px;
+    height: 50px;
+}
+
+.rodape .links a {
+    color: var(--Gray-700);
+    font-size: 14px;
+}
+
+.rodape .links a:hover {
+    color: var(--Green-500);
+}
+
+.rodape .redes-sociais {
+    display: flex;
+    gap: 25px;
+}
+
+.rodape .redes-sociais .fa-facebook,
+.fa-twitter,
+.fa-instagram {
+    width: 25px;
+    height: 25px;
+    color: var(--Gray-700);
+}
+
+.rodape .redes-sociais .fa-facebook :hover,
+.fa-twitter :hover,
+.fa-instagram :hover {
+    color: var(--Green-500);
+}
+
