@@ -44,7 +44,7 @@ Esta é a minha solução para o desafio [Clipboard landing page challenge on Fr
 
 ### Links
 
-- URL do site publicado: [Clique aqui](https://guilherme-ddiniz.github.io/bento-grid-main/)
+- URL do site publicado: [Clique aqui](https://guilherme-ddiniz.github.io/clipboard-landing-page-master/)
 
 ---
 
